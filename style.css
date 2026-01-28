@@ -22,33 +22,52 @@ body {
   padding: 120px 20px;
 }
 
-.hero h1 {
-  font-size: 48px;
-  font-weight: 600;
+.hero-line {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroIn 0.8s ease forwards;
 }
 
-.hero h2 {
-  font-size: 28px;
-  margin: 20px 0;
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+@keyframes heroIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.hero p {
-  max-width: 600px;
-  margin: 0 auto 30px;
-  color: #666;
-}
-
-/* BUTTONS */
+/* BUTTON */
 .btn {
+  margin-top: 24px;
   padding: 12px 28px;
   border-radius: 999px;
   border: none;
   cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
 }
 
 .btn.dark {
   background: #000;
   color: #fff;
+}
+
+/* REVEAL ON SCROLL */
+.reveal {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: all 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ABOUT */
@@ -60,31 +79,18 @@ body {
   background: #faf8f2;
 }
 
-.about-images {
-  position: relative;
-}
-
 .img {
   background: #ddd;
   border-radius: 12px;
 }
 
-.img.large {
-  height: 280px;
-}
-
+.img.large { height: 280px; }
 .img.small {
   height: 180px;
   width: 140px;
   position: absolute;
   right: -20px;
   bottom: -20px;
-}
-
-.tag {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #888;
 }
 
 /* SERVICES */
@@ -96,6 +102,15 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
 .card-img {
@@ -111,18 +126,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-}
-
-blockquote {
-  font-size: 28px;
-  font-weight: 500;
-}
-
-blockquote span {
-  display: block;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #666;
 }
 
 .rocket {
@@ -148,11 +151,6 @@ blockquote span {
   border-radius: 16px;
 }
 
-.price {
-  font-size: 22px;
-  margin: 20px 0;
-}
-
 /* CTA */
 .cta {
   background: #ffef5a;
@@ -165,3 +163,4 @@ footer {
   padding: 40px;
   font-weight: 600;
 }
+
