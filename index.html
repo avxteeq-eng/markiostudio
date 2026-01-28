@@ -1,11 +1,152 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Site</title>
-  </head>
-  <body>
-    <h1>Hello from Cloudflare Pages</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARKIO STUDIO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0 0;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .services, .pricing {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .service, .plan {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .cta a {
+      background: #000;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      background: #f3f3f3;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>MARKIO STUDIO</h1>
+    <p>CTRL+Creative — We are your next agency.</p>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About Us</h2>
+    <p>At Markio Studio, we don’t just run ads — we engineer digital campaigns that speak to the right people, at the right time, in the right place.</p>
+  </section>
+
+  <!-- SERVICES -->
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Facebook & Instagram Ad Management</h3>
+        <p>Hyper-targeted campaigns that drive leads, traffic, and sales — optimized for ROAS.</p>
+      </div>
+      <div class="service">
+        <h3>Google Ads (Search, Display & YouTube)</h3>
+        <p>Full-funnel strategy across search intent and visual retargeting. From keywords to creative, we handle it all.</p>
+      </div>
+      <div class="service">
+        <h3>Conversion Tracking & Reporting</h3>
+        <p>Real-time analytics dashboards and event tracking to measure what matters — so you never guess.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section>
+    <h2>What People Are Saying</h2>
+    <blockquote>
+      “They tripled our leads within 60 days!”<br>
+      <strong>— Jasmine L, E-commerce Owner</strong>
+    </blockquote>
+  </section>
+
+  <!-- PRICING -->
+  <section>
+    <h2>Pricing</h2>
+    <div class="pricing">
+      <div class="plan">
+        <h3>Starter Plan</h3>
+        <p><strong>RM950/month</strong></p>
+        <ul>
+          <li>Facebook or Google Ads (1 platform)</li>
+          <li>1 campaign / 3 ad sets</li>
+          <li>Basic ad creative & copy</li>
+          <li>Pixel/Conversion setup</li>
+          <li>Monthly performance report</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Growth Plan</h3>
+        <p><strong>RM1800/month</strong></p>
+        <ul>
+          <li>Facebook + Google Ads</li>
+          <li>3 campaigns / 6 ad sets</li>
+          <li>Custom ad creative</li>
+          <li>A/B Testing</li>
+          <li>Weekly performance report</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Get a Free Ad Strategy Plan</h2>
+    <a href="#">Get My Free Audit</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    MARKIO STUDIO
+  </footer>
+
+</body>
 </html>
