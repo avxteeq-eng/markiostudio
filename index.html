@@ -6,29 +6,30 @@
   <title>MARKIO STUDIO</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav reveal">
     <div class="logo">MARKIO STUDIO</div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <h1>CTRL+Creative</h1>
-    <h2>We are your next agency.</h2>
-    <p>
+    <h1 class="hero-line">CTRL+Creative</h1>
+    <h2 class="hero-line delay-1">We are your next agency.</h2>
+    <p class="hero-line delay-2">
       We run high-performing Facebook & Google Ads so you can focus on
       running your business — not chasing impressions.
     </p>
-    <button class="btn">Learn more</button>
+    <button class="btn hero-line delay-3">Learn more</button>
   </section>
 
   <!-- ABOUT -->
-  <section class="about">
+  <section class="about reveal">
     <div class="about-images">
-      <div class="img large"></div>
-      <div class="img small"></div>
+      <div class="img large parallax"></div>
+      <div class="img small parallax"></div>
     </div>
     <div class="about-text">
       <span class="tag">About Us</span>
@@ -40,47 +41,38 @@
   </section>
 
   <!-- SERVICES -->
-  <section class="services">
+  <section class="services reveal">
     <h3>Our services</h3>
     <div class="service-grid">
       <div class="card">
         <div class="card-img"></div>
         <h4>Facebook & Instagram Ad Management</h4>
-        <p>
-          Hyper-targeted campaigns that drive leads, traffic,
-          and sales — optimized for ROAS.
-        </p>
+        <p>Hyper-targeted campaigns optimized for ROAS.</p>
       </div>
       <div class="card">
         <div class="card-img"></div>
         <h4>Google Ads (Search, Display & YouTube)</h4>
-        <p>
-          Full-funnel strategy across search intent and
-          visual retargeting. From keywords to creative, we handle it all.
-        </p>
+        <p>Full-funnel search & retargeting strategy.</p>
       </div>
       <div class="card">
         <div class="card-img"></div>
         <h4>Conversion Tracking & Reporting</h4>
-        <p>
-          Real-time analytics dashboards and event tracking
-          to measure what matters — so you never guess.
-        </p>
+        <p>Analytics dashboards that show what matters.</p>
       </div>
     </div>
   </section>
 
   <!-- TESTIMONIAL -->
-  <section class="testimonial">
+  <section class="testimonial reveal">
     <blockquote>
       “They tripled our leads within 60 days!”
       <span>— Jasmine L</span>
     </blockquote>
-    <div class="rocket"></div>
+    <div class="rocket parallax"></div>
   </section>
 
   <!-- PRICING -->
-  <section class="pricing">
+  <section class="pricing reveal">
     <h3>Pricing</h3>
     <p class="subtitle">Talk to Us & Get Started.</p>
 
@@ -89,11 +81,9 @@
         <h4>Starter Plan</h4>
         <p class="price">RM950/month</p>
         <ul>
-          <li>Facebook or Google Ads (1 platform)</li>
+          <li>1 platform</li>
           <li>1 campaign / 3 ad sets</li>
-          <li>Basic ad creative</li>
-          <li>Pixel / conversion setup</li>
-          <li>Monthly performance report</li>
+          <li>Basic creative</li>
         </ul>
         <button class="btn dark">Get Started</button>
       </div>
@@ -104,9 +94,7 @@
         <ul>
           <li>Facebook + Google Ads</li>
           <li>3 campaigns / 6 ad sets</li>
-          <li>Custom ad creative</li>
           <li>A/B testing</li>
-          <li>Weekly performance report</li>
         </ul>
         <button class="btn dark">Let’s Grow</button>
       </div>
@@ -114,19 +102,15 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta">
+  <section class="cta reveal">
     <h3>Get a Free Ad Strategy Plan</h3>
-    <p>
-      Subscribe to receive expert tips and a free audit of your
-      Facebook or Google Ads.
-    </p>
+    <p>Receive expert tips and a free audit.</p>
     <button class="btn dark">Get My Free Audit</button>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    MARKIO STUDIO
-  </footer>
+  <footer class="reveal">MARKIO STUDIO</footer>
 
+  <script src="motion.js"></script>
 </body>
 </html>
+
